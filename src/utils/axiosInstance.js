@@ -2,6 +2,8 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
   baseURL: "https://portfolio-backend-oq6g.onrender.com/api",
+  // baseURL: "http://localhost:5001/api",
+
 });
 
 axiosInstance.interceptors.request.use((config) => {

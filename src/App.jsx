@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Pdf from "./pages/Pdf";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
+import Register from "./pages/Register";
 // import Users from "./pages/Users";
 
 function App(){
@@ -20,6 +21,8 @@ function App(){
       <Routes>
 
         <Route path="/" element={<Login/>}/>
+        <Route path="/admin-users" element={<Register/>}/>
+
 
         <Route path="/dashboard" element={
           <ProtectedRoute>
